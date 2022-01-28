@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,mEAAI;ADCZ,2DAA2D",
+    "sources": [
+        "../menu.scss",
+        "../variables.scss"
+    ],
+    "names": [],
+    "file": "menu.css"
+}

@@ -1,0 +1,46 @@
+@import "../variables.scss";
+
+@media all 
+{
+    header
+    {
+        display: flex;
+    }
+    header *
+    {
+        width: 100%;
+        height: 1.4rem;
+    }
+    header div
+    {
+        margin: auto;
+    }
+    header a
+    {
+        margin: auto;
+    }
+    header img
+    {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:576px)
+{
+   
+}
+
+@media screen and (max-width:768px)
+{
+    
+}
+
+@media screen and (max-width:992px)
+{
+    
+}
+
+@media all
+{
+    
+}

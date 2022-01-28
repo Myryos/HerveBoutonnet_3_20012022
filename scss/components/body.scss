@@ -1,0 +1,88 @@
+@import "../variables.scss";
+
+/* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
+
+
+
+@media all
+{   
+    h1,h2,h3,h4,h5,h6
+    {
+       font-family: $logos;
+    }
+    *:not(h1,h2,h3,h4,h5,h6)
+    {
+        font-family: $text;
+    }
+    body
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    body *    {
+        display: flex;
+        border: black solid 1px;
+        margin: 5%;
+    }
+    main
+    {
+        flex-direction: column;
+    }
+    section
+    {
+        flex-direction: column;
+    }
+    section *
+    {
+        flex-direction: column;
+    }
+    section img
+    {
+        object-fit: cover;
+    }
+
+    section button
+    {
+        background: $gradient1;
+        color: white;
+    }
+
+    ul
+    {
+        flex-direction: column;
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    a:visited
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+}
+@media screen and (max-width:340px)
+{
+  
+}
+
+@media screen and (max-width:576px)
+{
+   
+}
+
+@media screen and (max-width:768px)
+{
+    
+}
+
+@media screen and (max-width:992px)
+{
+    
+}
+@media screen and (max-width:993px)
+{
+    
+}
