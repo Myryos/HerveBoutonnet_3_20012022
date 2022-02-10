@@ -6,11 +6,7 @@
 
 @media all
 {   
-    h1,h2,h3,h4,h5,h6
-    {
-       font-family: $logos;
-    }
-    *:not(h1,h2,h3,h4,h5,h6)
+    *
     {
         font-family: $text;
     }
@@ -22,11 +18,16 @@
     body *    {
         display: flex;
         border: black solid 1px;
+    }
+    body
+    {
         margin: 5%;
     }
     main
     {
         flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     section
     {

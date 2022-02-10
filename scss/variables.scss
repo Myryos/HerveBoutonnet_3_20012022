@@ -6,7 +6,7 @@ $secondary:#FF79DA;
 $tertiary:#99E2D0;
 
 $gradient1:linear-gradient($secondary, $prime);
-$gradient2:linear-gradient($prime, $secondary);
+$gradient2:radial-gradient($prime, $secondary);
 
 
 $text:"Roboto";

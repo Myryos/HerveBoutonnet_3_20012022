@@ -2,10 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
 @media all {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Shrikhand";
-  }
-  *:not(h1, h2, h3, h4, h5, h6) {
+  * {
     font-family: "Roboto";
   }
   body {
@@ -22,6 +19,8 @@
     display: -ms-flexbox;
     display: flex;
     border: black solid 1px;
+  }
+  body {
     margin: 5%;
   }
   main {
@@ -29,6 +28,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   section {
     -webkit-box-orient: vertical;

@@ -5,9 +5,14 @@
     footer
     {
         flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
-
+@media screen and (max-width:340px)
+{
+  
+}
 @media screen and (max-width:576px)
 {
    
