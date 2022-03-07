@@ -67,4 +67,16 @@
     color: black;
   }
 }
+
+@media screen and (min-width: 993px) {
+  * {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 2550px) {
+  * {
+    font-size: 3em;
+  }
+}
 /*# sourceMappingURL=body.css.map */

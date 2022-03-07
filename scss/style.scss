@@ -6,12 +6,26 @@
     .Search
     {
         justify-content: center;
+        padding: 1.5em; 
+        background-color: #eaeaea;
     }
-    
+    .Search input
+    {
+        box-shadow: none;
+        border: none;
+        background-color: #eaeaea;
+        text-align: center;
+        width: 8em;
+    }
+    .Explorer,.Functioning,.Restaurants
+    {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
     .Explorer
     {
         justify-content: center;
-        
+        background-color: whitesmoke;
     }
     .Explorer div
     {
@@ -58,10 +72,10 @@
     }
     .list_Functioning *:not(.number_Tag)
     {
-       margin-left: .3em;
+       margin-left: .8em;
        margin-right: .1em;
     }
-    .list_Functioning *:not(.number_Tag, svg)
+    .list_Functioning *:not(.number_Tag, i)
     {
        min-width: 15%;
     }
@@ -79,12 +93,18 @@
         float: left;
         left: -0.6em;
     }
-    
-    .third svg
+    .third
     {
-        color:$prime;
+        background-color: #f5edff;
     }
-
+    .third i
+    {
+        color: $prime;
+    }
+    .Restaurants
+    {
+        background-color: whitesmoke;
+    }
     .Restaurants h2
     {
         margin-left: 5%;
@@ -92,10 +112,10 @@
 
     .Card
     {
-        width: 90%;
         align-self: center;
         margin-top: 5%;
         margin-bottom: 5%;
+        position: relative;
     }
     
     .card_Img
@@ -117,13 +137,11 @@
         background-color: $tertiary;
         margin-right: .5em;
         padding: .2em;
+        padding-top: .5em;
+        padding-bottom: .5em;
         font-weight: bold;
         color: #008766;
-    }
-    
-    .card_Contents
-    {
-        position: relative;
+        border-radius: .2em;
     }
 
 
@@ -137,7 +155,8 @@
     {
         position: absolute;
         float: right;
-        right: .3em;
+        right: .5em;
+        bottom: 1em;
         content: ' ';
         z-index: 100;
         font-weight: 100;
@@ -156,15 +175,19 @@
 }
 
 /* ici  SERA LE STYLE POUR LES PETITS SMARTPHONE*/
-@media screen and (max-width:340px)
+@media screen and (min-width:280px)
 {
+    .Card
+    {
+        width: 90%;
+    }
     .card_Img img
     {
-        max-height: 150px;
+        height: 180px;
     }
 }
 
-@media screen and (max-width:576px)
+@media screen and (min-width:341px)
 {
     .Search *
     { 
@@ -181,11 +204,10 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    .Functioning
+    .Card
     {
-
+        width: 90%;
     }
-
     .card_Img img
     {
         height: 300px;
@@ -194,8 +216,12 @@
 
 /* ici  SERA LE STYLE POUR LES SMARTPHONES*/
 
-@media screen and (max-width:768px)
+@media screen and (min-width:577px)
 {
+    .Card
+    {
+        width: 90%;
+    }
     .card_Img img
     {
         height: 450px;
@@ -204,13 +230,76 @@
 
 /* ici  SERA LE STYLE POUR LES TABLETTES*/
 
-@media screen and (max-width:992px)
+@media screen and (min-width:769px)
 {
-    
+    .funtioning_Contents
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .list_Functioning
+    {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+        flex-direction: column;
+    }
+    .number_Tag
+    {
+        top: -1.5em;
+        left: 4.5em;
+    }
+    .Contents
+    {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Card
+    {
+        width: 260px;
+        margin: 1em;
+    }
+    .card_Img img
+    {
+        height: 200px;  
+    } 
 }
 
 /* ici  SERA LE STYLE POUR LES DEKTOP*/
 @media screen and (min-width:993px)
 {
-    
+    .Contents
+    {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Card
+    {
+        width: 260px;
+        margin: 1em;
+    }
+    .card_Img img
+    {
+        height: 200px;  
+    }
+}
+@media screen and (min-width:2560px)
+{
+    .Contents
+    {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Card
+    {
+        width: 260px;
+        margin: 1em;
+    }
+    .card_Img img
+    {
+        height: 200px;  
+    }
 }

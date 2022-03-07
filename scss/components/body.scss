@@ -1,9 +1,6 @@
 @import "../variables.scss";
 
 /* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
-
-
-
 @media all
 {   
     *
@@ -83,7 +80,17 @@
 {
     
 }
-@media screen and (max-width:993px)
+@media screen and (min-width:993px)
 {
-    
+    *
+    {
+    font-size: 1.1em;
+    }
+}
+@media screen and (min-width:2550px)
+{
+    *
+    {
+        font-size: 3em;
+    }    
 }

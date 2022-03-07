@@ -6,11 +6,26 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 1.5em;
+    background-color: #eaeaea;
+  }
+  .Search input {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    background-color: #eaeaea;
+    text-align: center;
+    width: 8em;
+  }
+  .Explorer, .Functioning, .Restaurants {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
   .Explorer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: whitesmoke;
   }
   .Explorer div {
     margin: 5%;
@@ -68,10 +83,10 @@
             align-items: center;
   }
   .list_Functioning *:not(.number_Tag) {
-    margin-left: .3em;
+    margin-left: .8em;
     margin-right: .1em;
   }
-  .list_Functioning *:not(.number_Tag, svg) {
+  .list_Functioning *:not(.number_Tag, i) {
     min-width: 15%;
   }
   .number_Tag {
@@ -85,19 +100,25 @@
     float: left;
     left: -0.6em;
   }
-  .third svg {
+  .third {
+    background-color: #f5edff;
+  }
+  .third i {
     color: #9356DC;
+  }
+  .Restaurants {
+    background-color: whitesmoke;
   }
   .Restaurants h2 {
     margin-left: 5%;
   }
   .Card {
-    width: 90%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    position: relative;
   }
   .card_Img {
     position: relative;
@@ -115,11 +136,11 @@
     background-color: #99E2D0;
     margin-right: .5em;
     padding: .2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     font-weight: bold;
     color: #008766;
-  }
-  .card_Contents {
-    position: relative;
+    border-radius: .2em;
   }
   .card_Contents * {
     margin-top: 1%;
@@ -129,7 +150,8 @@
   .heart {
     position: absolute;
     float: right;
-    right: .3em;
+    right: .5em;
+    bottom: 1em;
     content: ' ';
     z-index: 100;
     font-weight: 100;
@@ -148,13 +170,16 @@
 }
 
 /* ici  SERA LE STYLE POUR LES PETITS SMARTPHONE*/
-@media screen and (max-width: 340px) {
+@media screen and (min-width: 280px) {
+  .Card {
+    width: 90%;
+  }
   .card_Img img {
-    max-height: 150px;
+    height: 180px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 341px) {
   .Search * {
     margin-left: 0;
     height: 1rem;
@@ -167,18 +192,107 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  .Card {
+    width: 90%;
+  }
   .card_Img img {
     height: 300px;
   }
 }
 
 /* ici  SERA LE STYLE POUR LES SMARTPHONES*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) {
+  .Card {
+    width: 90%;
+  }
   .card_Img img {
     height: 450px;
   }
 }
 
 /* ici  SERA LE STYLE POUR LES TABLETTES*/
+@media screen and (min-width: 769px) {
+  .funtioning_Contents {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .list_Functioning {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .number_Tag {
+    top: -1.5em;
+    left: 4.5em;
+  }
+  .Contents {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Card {
+    width: 260px;
+    margin: 1em;
+  }
+  .card_Img img {
+    height: 200px;
+  }
+}
+
 /* ici  SERA LE STYLE POUR LES DEKTOP*/
+@media screen and (min-width: 993px) {
+  .Contents {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Card {
+    width: 260px;
+    margin: 1em;
+  }
+  .card_Img img {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .Contents {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Card {
+    width: 260px;
+    margin: 1em;
+  }
+  .card_Img img {
+    height: 200px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
