@@ -116,6 +116,8 @@
         margin-top: 5%;
         margin-bottom: 5%;
         position: relative;
+        border:.1em gray solid;
+        border-radius: 1em;
     }
     
     .card_Img
@@ -126,6 +128,8 @@
     .card_Img img
     {
         object-fit: cover;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
     }
     .new_Tag
     {
@@ -157,19 +161,18 @@
         float: right;
         right: .5em;
         bottom: 1em;
-        content: ' ';
         z-index: 100;
         font-weight: 100;
         font-size: 1.6em;
         cursor: pointer;
     }
-    .heart:hover
+    .heart:hover:before
     {
-        color: $prime;
+        transition: all .1s ease-out;
         background-clip: text;
         -webkit-background-clip: text;
         font-weight: 900;
-        background-image: linear-gradient($secondary, $prime);
+        background-image: linear-gradient($prime, $secondary);
         -webkit-text-fill-color: transparent;
     }
 }
@@ -183,7 +186,7 @@
     }
     .card_Img img
     {
-        height: 180px;
+        height: 110px;
     }
 }
 
@@ -210,7 +213,7 @@
     }
     .card_Img img
     {
-        height: 300px;
+        height: 150px;
     }
 }
 
@@ -224,7 +227,7 @@
     }
     .card_Img img
     {
-        height: 450px;
+        height: 200px;
     }
 }
 
@@ -269,6 +272,10 @@
 /* ici  SERA LE STYLE POUR LES DEKTOP*/
 @media screen and (min-width:993px)
 {
+    .list_Functioning p
+    {
+        text-align: center;
+    }
     .Contents
     {
         flex-wrap: wrap;
@@ -287,6 +294,26 @@
 }
 @media screen and (min-width:2560px)
 {
+    
+    .Search input
+    {
+        width: 7em;
+        height: 1em;
+    }
+    .Explorer div *:not(button)
+    {
+        width:30em;
+    }
+    .list_Functioning
+    {
+        width: 31em;
+        height: 13em;
+    }
+    
+    .number_Tag
+    {
+        left: 7.5em;
+    }
     .Contents
     {
         flex-wrap: wrap;
@@ -295,11 +322,24 @@
     }
     .Card
     {
-        width: 260px;
+        width: 500px;
         margin: 1em;
     }
     .card_Img img
     {
-        height: 200px;  
+        height: 250px;  
+    }
+    .Card i
+    {
+        font-size: 2.2em;
+        bottom:2em;
+    }
+    .card_Contents *
+    {
+        font-size: 2.2em;
+    }
+    .new_Tag
+    {
+        width: 4.5em;
     }
 }

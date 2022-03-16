@@ -119,6 +119,8 @@
     margin-top: 5%;
     margin-bottom: 5%;
     position: relative;
+    border: .1em gray solid;
+    border-radius: 1em;
   }
   .card_Img {
     position: relative;
@@ -126,6 +128,8 @@
   .card_Img img {
     -o-object-fit: cover;
        object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
   }
   .new_Tag {
     text-align: center;
@@ -152,19 +156,19 @@
     float: right;
     right: .5em;
     bottom: 1em;
-    content: ' ';
     z-index: 100;
     font-weight: 100;
     font-size: 1.6em;
     cursor: pointer;
   }
-  .heart:hover {
-    color: #9356DC;
+  .heart:hover:before {
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
     background-clip: text;
     -webkit-background-clip: text;
     font-weight: 900;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
   }
 }
@@ -175,7 +179,7 @@
     width: 90%;
   }
   .card_Img img {
-    height: 180px;
+    height: 110px;
   }
 }
 
@@ -196,7 +200,7 @@
     width: 90%;
   }
   .card_Img img {
-    height: 300px;
+    height: 150px;
   }
 }
 
@@ -206,7 +210,7 @@
     width: 90%;
   }
   .card_Img img {
-    height: 450px;
+    height: 200px;
   }
 }
 
@@ -255,6 +259,9 @@
 
 /* ici  SERA LE STYLE POUR LES DEKTOP*/
 @media screen and (min-width: 993px) {
+  .list_Functioning p {
+    text-align: center;
+  }
   .Contents {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -276,6 +283,20 @@
 }
 
 @media screen and (min-width: 2560px) {
+  .Search input {
+    width: 7em;
+    height: 1em;
+  }
+  .Explorer div *:not(button) {
+    width: 30em;
+  }
+  .list_Functioning {
+    width: 31em;
+    height: 13em;
+  }
+  .number_Tag {
+    left: 7.5em;
+  }
   .Contents {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -288,11 +309,21 @@
             justify-content: center;
   }
   .Card {
-    width: 260px;
+    width: 500px;
     margin: 1em;
   }
   .card_Img img {
-    height: 200px;
+    height: 250px;
+  }
+  .Card i {
+    font-size: 2.2em;
+    bottom: 2em;
+  }
+  .card_Contents * {
+    font-size: 2.2em;
+  }
+  .new_Tag {
+    width: 4.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
