@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+.heart:hover:before
+    {
+        transition: all .1s ease-out;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 900;
+        background-image: linear-gradient($prime, $secondary);
+        -webkit-text-fill-color: transparent;
+    }
