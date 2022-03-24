@@ -5,12 +5,11 @@
   main * {
     border: 1px solid black;
     font-size: 1em;
-    white-space: nowrap;
   }
   .img_Bg {
     z-index: -1;
     position: absolute;
-    width: 100%;
+    width: 90%;
   }
   .img_Bg img {
     -o-object-fit: cover;
@@ -42,7 +41,11 @@
     overflow: hidden;
   }
   .card_Content * {
+    display: inline;
+    width: 100%;
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .card_Content *:not(h3) {
     margin-left: .5em;
