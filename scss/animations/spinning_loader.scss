@@ -1,105 +1,192 @@
 @import "../variables.scss";
 
-body *:not(.spinning_loader)
-{
-    animation: invisibility 4s linear 1;
-}
+@media all {
+    
 
-.spinning_loader {
-    position: absolute;
-    align-self: center;
-    left: -99em;
-    width: 200px;
-    height: 200px;
-    border: 4px solid #240229;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
-      10px 10px 10px rgba(0, 0, 0, 0.4),
-      inset -5px -5px 5px rgba(255, 255, 255, 0.2),
-      inset 10px 10px 10px rgba(0, 0, 0, 0.4);
-      animation: spinner 4s linear 1;
-  }
-  
-  .spinning_loader:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
-    z-index: 10;
-    background: #282828;
-    border-radius: 50%;
-    border: 2px solid #240229;
-    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
-      inset 3px 3px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .spinning_loader span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-image: linear-gradient(
-      -225deg,
-      $prime 0%,
-      $secondary 25%,
-      $prime 50%,
-      $secondary 100%
-    );
-  
-    filter: blur(20px);
-    z-index: -1;
-    animation: loader 0.5s linear 6;
-  }
-  
-@keyframes loader {
-    0% {
-        transform: rotate(0deg);
+    body *:not(.spinning_loader)
+    {
+        animation: invisibility 4s linear 1;
     }
-    100% {
-        transform: rotate(360deg);
-    }
-  }
-@keyframes spinner {
-    0%{
-        left: 50%;
-        top: 25%;
-    }
-    25%{
-        left: 50%;
-        top: 25%;
-    }
-    50%{
-        left: 50%;
-        top: 25%;
-    }
-    75%{
-        left: 50%;
-        top: 25%;
-    }
-    100%{
+
+    .spinning_loader {
+        position: absolute;
+        align-self: center;
         left: -99em;
-        top: 25em;
+        width: 200px;
+        height: 200px;
+        border: 4px solid #240229;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+        10px 10px 10px rgba(0, 0, 0, 0.4),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+        inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+        animation: spinner 4s linear 1;
+    }
+    
+    .spinning_loader:before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+        z-index: 10;
+        background: #282828;
+        border-radius: 50%;
+        border: 2px solid #240229;
+        box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+        inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .spinning_loader span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-image: linear-gradient(
+        -225deg,
+        $prime 0%,
+        $secondary 25%,
+        $prime 50%,
+        $secondary 100%
+        );
+    
+        filter: blur(20px);
+        z-index: -1;
+        animation: loader 0.5s linear 6;
+    }
+    
+    @keyframes loader {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spinner {
+        0%{
+            left: 50%;
+            top: 25%;
+        }
+        25%{
+            left: 50%;
+            top: 25%;
+        }
+        50%{
+            left: 50%;
+            top: 25%;
+        }
+        75%{
+            left: 50%;
+            top: 25%;
+        }
+        100%{
+            left: -99em;
+            top: 25em;
+        }
+    }
+
+    @keyframes invisibility
+    {
+        0%{
+            opacity: 0;
+            overflow: hidden;
+        }
+        25%{
+            opacity: 0;
+            overflow: hidden;
+        }
+        50%{
+            opacity: 0;
+            overflow: hidden;
+        }
+        75%{
+            opacity: 0;
+            overflow: hidden;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 }
 
-@keyframes invisibility
+@media screen and (min-width:280px)
 {
-    0%{
-        opacity: 0;
+    @keyframes spinner {
+        0%{
+            left: 15%;
+            top: 25%;
+        }
+        25%{
+            left: 15%;
+            top: 25%;
+        }
+        50%{
+            left: 15%;
+            top: 25%;
+        }
+        75%{
+            left: 15%;
+            top: 25%;
+        }
+        100%{
+            left: -99em;
+            top: 25em;
+        }
     }
-    25%{
-        opacity: 0;
+}
+
+
+@media screen and (min-width:577px)
+{
+    @keyframes spinner {
+        0%{
+            left: 30%;
+            top: 25%;
+        }
+        25%{
+            left: 30%;
+            top: 25%;
+        }
+        50%{
+            left: 30%;
+            top: 25%;
+        }
+        75%{
+            left: 30%;
+            top: 25%;
+        }
+        100%{
+            left: -99em;
+            top: 25em;
+        }
     }
-    50%{
-        opacity: 0;
-    }
-    75%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
+}
+
+@media screen and (min-width:769px)
+{
+    @keyframes spinner {
+        0%{
+            left: 38%;
+            top: 25%
+        }
+        25%{
+            left: 38%;
+            top: 25%
+        }
+        50%{
+            left: 38%;
+            top: 25%
+        }
+        75%{
+            left: 38%;
+            top: 25%
+        }
+        100%{
+            left: -99em;
+            top: 25em;
+        }
     }
 }

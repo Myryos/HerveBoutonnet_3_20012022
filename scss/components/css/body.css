@@ -67,7 +67,10 @@
   }
 }
 
-@media screen and (min-width: 2550px) {
+@media screen and (min-width: 2560px) {
+  body {
+    max-width: 2560px;
+  }
   p, button, i, input {
     font-size: 2em;
   }

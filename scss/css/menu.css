@@ -1,4 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
+@media all {
+  main * {
+    border: 1px solid black;
+    font-size: 1em;
+    white-space: nowrap;
+  }
+  .img_Bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+  }
+  .img_Bg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  .main_Section {
+    background: white;
+    margin-top: 15em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+  .Card {
+    margin-bottom: .5em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: .8em;
+    width: 90%;
+    margin: auto;
+  }
+  .Card * {
+    margin: 0;
+    margin-bottom: .01em;
+  }
+  .card_Content {
+    width: 90%;
+    overflow: hidden;
+  }
+  .card_Content * {
+    text-overflow: ellipsis;
+  }
+  .card_Content *:not(h3) {
+    margin-left: .5em;
+  }
+  .price {
+    width: 15%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .Green_Button {
+    display: none;
+    width: 20%;
+  }
+  .Green_Button button {
+    height: 100%;
+    width: 100%;
+    background: #99E2D0;
+  }
+  .Card:hover .Green_Button {
+    display: block;
+  }
+  h1 {
+    margin-left: 5%;
+    font-family: "Shrikhand";
+  }
+  h2 {
+    position: relative;
+    padding-bottom: .3em;
+    margin-left: 5%;
+  }
+  h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2em;
+    height: 3px;
+    background-color: #99E2D0;
+  }
+}
 /*# sourceMappingURL=menu.css.map */
