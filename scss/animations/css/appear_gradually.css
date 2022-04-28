@@ -1,0 +1,50 @@
+.Card {
+  opacity: 0;
+}
+
+.first {
+  -webkit-animation: hidden 1s linear .25s forwards;
+          animation: hidden 1s linear .25s forwards;
+}
+
+.second {
+  -webkit-animation: hidden 1s linear .5s forwards;
+          animation: hidden 1s linear .5s forwards;
+}
+
+.third {
+  -webkit-animation: hidden 1s linear .75s forwards;
+          animation: hidden 1s linear .75s forwards;
+}
+
+.fourth {
+  -webkit-animation: hidden 1s linear 1s forwards;
+          animation: hidden 1s linear 1s forwards;
+}
+
+@-webkit-keyframes hidden {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=appear_gradually.css.map */

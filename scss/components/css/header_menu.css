@@ -1,3 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media screen and (min-width: 992px) {
+  header {
+    margin-bottom: 5%;
+  }
+  header div img {
+    width: 30em;
+  }
+}
+
+@media all {
+  header div {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header div img {
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=header_menu.css.map */

@@ -63,26 +63,41 @@
 }
 @media screen and (max-width:340px)
 {
-  
+    body
+    {
+        max-width: 340px;
+    }
 }
 
 @media screen and (max-width:576px)
 {
-   
+    body
+    {
+        max-width: 576px;
+    }
 }
 
 @media screen and (max-width:768px)
 {
-    
+    body
+    {
+        max-width: 768px;
+    }
 }
 
 @media screen and (max-width:992px)
 {
-    
+    body
+    {
+        max-width: 992px;
+    }
 }
 @media screen and (min-width:993px)
 {
-    
+    body
+    {
+        max-width: 1600px;
+    }
 }
 
 @media screen and (min-width:2560px)

@@ -3,26 +3,38 @@
 /* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
 @media all {
   main * {
-    border: 1px solid black;
     font-size: 1em;
   }
   .img_Bg {
     z-index: -1;
-    position: absolute;
-    width: 90%;
-  }
-  .img_Bg img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
+    opacity: .99;
+    width: 99.50%;
+    background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-size: cover;
   }
   .main_Section {
     background: white;
-    margin-top: 15em;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
   }
+  .title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .title i {
+    position: absolute;
+    right: 1em;
+    top: .3em;
+    font-size: 1.5em;
+  }
   .Card {
+    border: 1px solid black;
     margin-bottom: .5em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -31,10 +43,11 @@
     border-radius: .8em;
     width: 90%;
     margin: auto;
+    margin-bottom: 0.5em;
   }
   .Card * {
     margin: 0;
-    margin-bottom: .01em;
+    margin-bottom: .1em;
   }
   .card_Content {
     width: 90%;
@@ -58,15 +71,28 @@
   }
   .Green_Button {
     display: none;
-    width: 20%;
+    width: 3.5em;
   }
   .Green_Button button {
     height: 100%;
     width: 100%;
     background: #99E2D0;
+    color: white;
+    border-top-right-radius: .8em;
+    border-bottom-right-radius: .8em;
+  }
+  .Green_Button svg {
+    height: 75%;
+    width: 75%;
+    fill: white;
+    margin: auto;
   }
   .Card:hover .Green_Button {
     display: block;
+  }
+  .Card:hover .Green_Button svg {
+    -webkit-animation: spin 0.2s linear 3;
+            animation: spin 0.2s linear 3;
   }
   h1 {
     margin-left: 5%;
@@ -85,6 +111,124 @@
     width: 2em;
     height: 3px;
     background-color: #99E2D0;
+  }
+  .command_Button button {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border: none;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .img_Bg {
+    height: 20em;
+    background-position: right 50% bottom 0%;
+  }
+  .main_Section {
+    margin-top: -5em;
+  }
+}
+
+@media screen and (min-width: 341px) {
+  .img_Bg {
+    height: 25em;
+    background-position: right 50% bottom 0%;
+  }
+  .main_Section {
+    margin-top: -5em;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .img_Bg {
+    height: 35em;
+    background-position: right 50% bottom 30%;
+  }
+  .main_Section {
+    margin-top: -5em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .img_Bg {
+    height: 45em;
+    background-position: right 50% bottom 50%;
+  }
+  .main_Section {
+    margin-top: -5em;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .img_Bg {
+    height: 45em;
+    background-position: right 50% bottom 30%;
+  }
+  .dish_Section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .dish_List {
+    width: 25%;
+  }
+  .dish_List * {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .img_Bg {
+    height: 45em;
+    background-position: right 50% bottom 40%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .title h1 {
+    font-size: 2em;
+  }
+  .title i {
+    font-size: 3em;
+  }
+  .dish_List * {
+    font-size: 1.25em;
+  }
+  .dish_List h2 {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=menu.css.map */

@@ -10,12 +10,29 @@
     
 }
 
-@media screen and (max-width:992px)
+@media screen and (min-width:992px)
 {
-    
+    header
+    {
+        margin-bottom: 5%;
+    }
+    header div img 
+    {
+        width: 30em;
+    }
 }
 
 @media all
 {
+   
+    header div
+    {
+        width: 100%;
+        justify-content: flex-start;
+    }
     
+    header div img
+    {
+        margin: auto;
+    }
 }
