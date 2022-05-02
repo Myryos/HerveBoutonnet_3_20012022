@@ -1,11 +1,29 @@
 @import "../variables.scss";
 
-.heart:hover:before
-    {
-        transition: all 2s ease;
-        background-clip: text;
-        -webkit-background-clip: text;
-        font-weight: 900;
-        background-image: linear-gradient($prime, $secondary);
-        -webkit-text-fill-color: transparent;
-    }
+.heart_icon:before
+{
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    bottom : 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .3s linear;
+    content: "\f004";
+    background-image: linear-gradient($prime, $secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+}
+
+.heart_icon:hover i
+{
+    -webkit-text-fill-color: transparent;
+    transition: all .5s linear;
+}
+.heart_icon:hover:before
+{
+    height: 100%;
+    z-index: -1;
+}

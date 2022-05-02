@@ -154,8 +154,9 @@
         margin-bottom: .3em;
         margin-left: 2%;
     }
-    .heart
+    .heart_icon
     {
+        justify-content: flex-end;
         position: absolute;
         float: right;
         right: .5em;
