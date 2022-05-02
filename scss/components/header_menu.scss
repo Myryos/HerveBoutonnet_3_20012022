@@ -1,20 +1,11 @@
 @import "../variables.scss";
 
-@media screen and (max-width:576px)
-{
-   
-}
-
-@media screen and (max-width:768px)
-{
-    
-}
-
 @media screen and (min-width:992px)
 {
     header
     {
-        margin-bottom: 5%;
+        margin-top: 5em;
+        margin-bottom: 5em;
     }
     header div img 
     {
@@ -24,6 +15,15 @@
 
 @media all
 {
+    header
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    header div a
+    {
+        align-items: center;
+    }
    
     header div
     {

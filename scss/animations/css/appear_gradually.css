@@ -3,23 +3,23 @@
 }
 
 .first {
-  -webkit-animation: hidden 1s linear .25s forwards;
-          animation: hidden 1s linear .25s forwards;
+  -webkit-animation: hidden .5s linear .25s forwards;
+          animation: hidden .5s linear .25s forwards;
 }
 
 .second {
-  -webkit-animation: hidden 1s linear .5s forwards;
-          animation: hidden 1s linear .5s forwards;
+  -webkit-animation: hidden .5s linear .5s forwards;
+          animation: hidden .5s linear .5s forwards;
 }
 
 .third {
-  -webkit-animation: hidden 1s linear .75s forwards;
-          animation: hidden 1s linear .75s forwards;
+  -webkit-animation: hidden .5s linear .75s forwards;
+          animation: hidden .5s linear .75s forwards;
 }
 
 .fourth {
-  -webkit-animation: hidden 1s linear 1s forwards;
-          animation: hidden 1s linear 1s forwards;
+  -webkit-animation: hidden .5s linear 1s forwards;
+          animation: hidden .5s linear 1s forwards;
 }
 
 @-webkit-keyframes hidden {

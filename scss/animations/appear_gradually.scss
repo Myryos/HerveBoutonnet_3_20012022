@@ -3,16 +3,16 @@
     opacity: 0;
 }
 .first
-{animation: hidden 1s linear .25s forwards;}
+{animation: hidden .5s linear .25s forwards;}
 
 .second{
-    animation: hidden 1s linear .5s forwards;
+    animation: hidden .5s linear .5s forwards;
 }
 .third{
-    animation: hidden 1s linear .75s forwards;
+    animation: hidden .5s linear .75s forwards;
 }
 .fourth{
-    animation: hidden 1s linear 1s forwards;
+    animation: hidden .5s linear 1s forwards;
 }
 
 @keyframes hidden

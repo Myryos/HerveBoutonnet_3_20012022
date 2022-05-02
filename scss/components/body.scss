@@ -1,6 +1,5 @@
 @import "../variables.scss";
 
-/* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
 @media all
 {   
     *
@@ -11,14 +10,11 @@
     {
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     body *    
     {
         display: flex;
-    }
-    body
-    {
-        margin: 5%;
     }
     main
     {

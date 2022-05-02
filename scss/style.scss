@@ -79,8 +79,15 @@
     {
        min-width: 15%;
     }
-    
-    
+    .list_Functioning:hover
+    {
+        background-color: #f5edff;
+    }
+    .list_Functioning:hover i
+    {
+        color: $prime;
+    }
+     
     .number_Tag
     {
         background-color: $prime;
@@ -92,14 +99,6 @@
         position: absolute;
         float: left;
         left: -0.6em;
-    }
-    .third
-    {
-        background-color: #f5edff;
-    }
-    .third i
-    {
-        color: $prime;
     }
     .Restaurants
     {
@@ -260,7 +259,7 @@
     } 
 }
 
-/* ici  SERA LE STYLE POUR LES DEKTOP*/
+/* ici  SERA LE STYLE POUR LES DESKTOP*/
 @media screen and (min-width:993px)
 {
     .list_Functioning p

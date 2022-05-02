@@ -4,7 +4,7 @@
     
     body 
     {
-        animation: surface 60s linear 1;
+        animation: surface 2s linear 1;
         position: relative;
     }
     .spinner_Container
@@ -20,7 +20,7 @@
         z-index: -100;
         opacity: 0;
         background-color: white;
-        animation: invisibility 60s linear 1;
+        animation: invisibility 2s linear 1;
     }
 
     .spinning_loader {
@@ -63,31 +63,7 @@
             transform: rotate(360deg);
         }
     }
-    @keyframes spinner {
-        0%{
-            left: 0;
-            top: 0;
-            
-        }
-        25%{
-            left: 0;
-            top: 0;
-            
-        }
-        50%{
-            left: 0;
-            top: 0;
-            
-        }
-        75%{
-            left: 0;
-            top: 0;
-        }
-        100%{
-            left: -99em;
-            top: 25em;
-        }
-    }
+   
     @keyframes surface {
         0%{
             margin: auto;
@@ -119,85 +95,6 @@
         }
         100%{
             opacity: 0;
-        }
-    }
-}
-
-@media screen and (min-width:280px)
-{
-    @keyframes spinner {
-        0%{
-            left: 15%;
-            top: 25%;
-        }
-        25%{
-            left: 15%;
-            top: 25%;
-        }
-        50%{
-            left: 15%;
-            top: 25%;
-        }
-        75%{
-            left: 15%;
-            top: 25%;
-        }
-        100%{
-            left: -99em;
-            top: 25em;
-        }
-    }
-}
-
-
-@media screen and (min-width:577px)
-{
-    @keyframes spinner {
-        0%{
-            left: 30%;
-            top: 25%;
-        }
-        25%{
-            left: 30%;
-            top: 25%;
-        }
-        50%{
-            left: 30%;
-            top: 25%;
-        }
-        75%{
-            left: 30%;
-            top: 25%;
-        }
-        100%{
-            left: -99em;
-            top: 25em;
-        }
-    }
-}
-
-@media screen and (min-width:769px)
-{
-    @keyframes spinner {
-        0%{
-            left: 38%;
-            top: 25%
-        }
-        25%{
-            left: 38%;
-            top: 25%
-        }
-        50%{
-            left: 38%;
-            top: 25%
-        }
-        75%{
-            left: 38%;
-            top: 25%
-        }
-        100%{
-            left: -99em;
-            top: 25em;
         }
     }
 }

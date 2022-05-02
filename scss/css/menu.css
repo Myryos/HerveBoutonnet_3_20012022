@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
 @media all {
   main * {
@@ -91,8 +89,8 @@
     display: block;
   }
   .Card:hover .Green_Button svg {
-    -webkit-animation: spin 0.2s linear 3;
-            animation: spin 0.2s linear 3;
+    -webkit-animation: spin 0.3s linear 1;
+            animation: spin 0.3s linear 1;
   }
   h1 {
     margin-left: 5%;
@@ -128,22 +126,22 @@
   }
   @-webkit-keyframes spin {
     0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
     }
     100% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
   }
   @keyframes spin {
     0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
     }
     100% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
   }
 }
@@ -205,12 +203,12 @@
   .dish_List {
     width: 25%;
   }
-  .dish_List * {
-    font-size: 1em;
-  }
 }
 
 @media screen and (min-width: 1400px) {
+  .title h1 {
+    font-size: 1.5em;
+  }
   .img_Bg {
     height: 45em;
     background-position: right 50% bottom 40%;
@@ -219,7 +217,7 @@
 
 @media screen and (min-width: 2560px) {
   .title h1 {
-    font-size: 2em;
+    font-size: 4em;
   }
   .title i {
     font-size: 3em;
