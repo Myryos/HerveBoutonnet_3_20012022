@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import "../variables_color.scss";
 
 @media all {
     
@@ -44,7 +44,7 @@
         border: 8px solid $prime;
         border-radius: 50%;
         animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-        border-color: $secondary transparent transparent transparent;
+        border-color: transparent transparent transparent $prime;
       }
       .lds-ring div:nth-child(1) {
         animation-delay: -0.45s;

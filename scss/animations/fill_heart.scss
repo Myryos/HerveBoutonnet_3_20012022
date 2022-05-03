@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import "../variables_color.scss";
 
 
 
@@ -21,7 +21,6 @@
     width: 1em;
     height: 1em;
     overflow: hidden;
-    //clip-path: url(#gradientClipPath);
     position: relative;
     z-index: 1;
     &::before
