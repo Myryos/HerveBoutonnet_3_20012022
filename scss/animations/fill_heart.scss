@@ -1,29 +1,52 @@
 @import "../variables.scss";
 
-.heart_icon:before
+
+
+.heart_icon svg
 {
-    font-family: 'Font Awesome 5 Free';
+    width: 1em;
     position: absolute;
-    bottom : 0;
-    left: 0;
-    height: 0;
     overflow: hidden;
-    transition: .3s linear;
-    content: "\f004";
+}
+.heart_icon:hover svg
+{
+    top: 0;
+    left: 0;
+    fill:url(#gradient_primary);
+    z-index: 1000;
+}
+.heart_fill
+{
+    display: block;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    //clip-path: url(#gradientClipPath);
+    position: relative;
+    z-index: 1;
+    &::before
+    {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f004';
+        display: block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.2s linear;
+        transform-origin: center 60%;
+        z-index: -1000;
+    }
+}
+
+.heart_icon:hover .heart_fill::before
+{
+    transform: scale(1);
+    opacity: 1;
     background-image: linear-gradient($prime, $secondary);
     background-clip: text;
     -webkit-background-clip: text;
     font-weight: 900;
     -webkit-text-fill-color: transparent;
-}
-
-.heart_icon:hover i
-{
-    -webkit-text-fill-color: transparent;
-    transition: all .5s linear;
-}
-.heart_icon:hover:before
-{
-    height: 100%;
-    z-index: -1;
 }
