@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @media all {
   * {
     font-family: "Roboto";
@@ -12,7 +10,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0;
+    margin: auto;
   }
   body * {
     display: -webkit-box;

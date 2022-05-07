@@ -37,6 +37,19 @@
     padding: 1rem;
     margin-top: 5%;
     margin-bottom: 5%;
+    border: none;
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-transition: border .2s linear, -webkit-filter .2s linear;
+    transition: border .2s linear, -webkit-filter .2s linear;
+    transition: filter .2s linear, border .2s linear;
+    transition: filter .2s linear, border .2s linear, -webkit-filter .2s linear;
+  }
+  .Explorer button:hover {
+    -webkit-box-shadow: .2em .2em #ddd, -.2em -.2em #ddd;
+            box-shadow: .2em .2em #ddd, -.2em -.2em #ddd;
+    -webkit-filter: brightness(1.25);
+            filter: brightness(1.25);
   }
   .functioning_Contents {
     -webkit-box-align: center;
@@ -60,7 +73,6 @@
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 1em;
-    border: .1em whitesmoke solid;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -117,7 +129,8 @@
     margin-top: 5%;
     margin-bottom: 5%;
     position: relative;
-    border: .1em gray solid;
+    -webkit-box-shadow: 0em .2em 2em #ddd;
+            box-shadow: 0em .2em 2em #ddd;
     border-radius: 1em;
   }
   .card_Img {
@@ -170,7 +183,7 @@
     width: 90%;
   }
   .card_Img img {
-    height: 110px;
+    height: 150px;
   }
 }
 
@@ -191,7 +204,7 @@
     width: 90%;
   }
   .card_Img img {
-    height: 150px;
+    height: 250px;
   }
 }
 
@@ -201,7 +214,7 @@
     width: 90%;
   }
   .card_Img img {
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -268,9 +281,6 @@
     width: 260px;
     margin: 1em;
   }
-  .card_Img img {
-    height: 200px;
-  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -283,7 +293,7 @@
   }
   .list_Functioning {
     width: 31em;
-    height: 13em;
+    height: 20em;
   }
   .number_Tag {
     left: 7.5em;
@@ -304,9 +314,9 @@
     margin: 1em;
   }
   .card_Img img {
-    height: 250px;
+    height: 300px;
   }
-  .Card i {
+  .heart_icon {
     font-size: 2.2em;
     bottom: 2em;
   }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../variable_font.scss"
+    ],
+    "names": [],
+    "file": "variable_font.css"
+}

@@ -122,7 +122,7 @@
         margin-top: 5%;
         margin-bottom: 5%;
         position: relative;
-        box-shadow: 0em .2em 2em #ddd;
+        box-shadow: .1em .1em #ddd, -.1em -.1em #ddd;
         border-radius: 1em;
     }
     
@@ -184,7 +184,7 @@
     }
     .card_Img img
     {
-        height: 150px;
+        height: 110px;
     }
 }
 
@@ -211,7 +211,7 @@
     }
     .card_Img img
     {
-        height: 250px;
+        height: 150px;
     }
 }
 
@@ -225,7 +225,7 @@
     }
     .card_Img img
     {
-        height: 300px;
+        height: 200px;
     }
 }
 
@@ -285,7 +285,10 @@
         width: 260px;
         margin: 1em;
     }
-    
+    .card_Img img
+    {
+        height: 200px;  
+    }
 }
 @media screen and (min-width:2560px)
 {
@@ -301,7 +304,7 @@
     .list_Functioning
     {
         width: 31em;
-        height: 20em;
+        height: 13em;
     }
     
     .number_Tag
@@ -321,7 +324,7 @@
     }
     .card_Img img
     {
-        height: 300px;  
+        height: 250px;  
     }
     .heart_icon
     {

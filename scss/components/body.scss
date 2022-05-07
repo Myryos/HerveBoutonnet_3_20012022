@@ -1,7 +1,6 @@
-@import "../variables_font.scss";
+@import "../variable_font.scss";
 @import "../variables_color.scss";
 
-;
 
 @media all
 {   
@@ -13,7 +12,7 @@
     {
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: auto;
     }
     body *    
     {

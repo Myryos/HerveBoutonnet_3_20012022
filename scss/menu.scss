@@ -1,5 +1,5 @@
-@import "variables_font.scss";
-@import "variable_color.scss";
+@import "variable_font.scss";
+@import "variables_color.scss";
 
 
 /* ici  SERA LE STYLE GLOBAL PAR DEFAULT DE 280PX A 575PX*/
@@ -14,8 +14,23 @@
         z-index: -1;
         opacity: .99;
         width: 99.50%;
-        background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
         background-size: cover;
+    }
+    .note
+    {
+        background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+    .delice
+    {
+        background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    }
+    .francaise
+    {
+        background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+    .palette
+    {
+        background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     }
     .main_Section
     {
@@ -40,23 +55,24 @@
 
     .Card
     {
-        border: 1px solid black;
+        box-shadow: 0em .2em 2em #ddd;
         margin-bottom: .5em;
         flex-direction: row;
         border-radius: .8em;
         width:90%;
         margin:auto;
         margin-bottom: 0.5em;
+        overflow: hidden;
     }
     .Card *
     {
         margin: 0;
-        margin-bottom: .1em;
     }
     .card_Content
     {
         width: 90%;
         overflow: hidden;
+        padding: .5em;
     }
     .card_Content *
     {
@@ -74,11 +90,13 @@
     {
         width: 15%;
         justify-content: end;
+        padding: .5em;
     }
     .Green_Button
     {
-        display: none;
+        margin-right: -3.5em;
         width: 3.5em;
+        transition: margin-right .5s;
     }
     .Green_Button button
     {
@@ -86,10 +104,7 @@
         width: 100%;
         background: $tertiary;
         color: white;
-        
-        
-        border-top-right-radius: .8em;
-        border-bottom-right-radius: .8em;
+        border: none;
     }
     .Green_Button svg
     {
@@ -97,15 +112,16 @@
         width: 75%;
         fill: white;
         margin: auto;
+        
     }
 
     .Card:hover .Green_Button
     {
-        display: block;
+        margin-right: 0;
     }
     .Card:hover .Green_Button svg
     {
-        animation: spin 0.3s linear 1;
+        animation: spin 1s;
     }
     h1
     {
@@ -143,6 +159,13 @@
         border-bottom-left-radius: 2em;
         border-top-right-radius:2em;
         border-bottom-right-radius:2em;
+        filter: brightness(1);
+        transition: filter .2s linear, border .2s linear;
+    }
+    .command_Button button:hover
+    {
+        box-shadow: .2em .2em #ddd, -.2em -.2em #ddd;
+        filter: brightness(1.25);
     }
     @keyframes spin {
         0%{
@@ -159,8 +182,18 @@
     .img_Bg
     {
         height: 20em;
+    }
+    .delice
+    {
+        background-position: right 45% bottom 5em;
+    }
+    .francaise
+    {
+        background-position: right 75% bottom 1.5em;
+    }
+    .palette
+    {
         background-position: right 50% bottom 0%;
-
     }
     .main_Section
     {
@@ -172,8 +205,6 @@
     .img_Bg
     {
         height: 25em;
-        background-position: right 50% bottom 0%;
-
     }
     .main_Section
     {
@@ -185,8 +216,6 @@
     .img_Bg
     {
         height: 35em;
-        background-position: right 50% bottom 30%;
-
     }
     .main_Section
     {
@@ -199,9 +228,12 @@
     .img_Bg
     {
         height: 45em;
-        background-position: right 50% bottom 50%;
-
     }
+    .note
+    {
+        background-position: right 50% bottom -5em;
+    }
+    
     .main_Section
     {
         margin-top: -5em;
@@ -212,10 +244,11 @@
     .img_Bg
     {
         height: 45em;
-        background-position: right 50% bottom 30%;
-
     }
-
+    .palette
+    {
+        background-position: right 50% bottom 0%;
+    }
     .dish_Section
     {
         flex-direction: row;
@@ -230,15 +263,22 @@
 }
 @media screen and (min-width:1400px)
 {
+    
     .title h1
+    {
+        font-size: 1.5em;
+    }
+    .heart_icon
     {
         font-size: 1.5em;
     }
     .img_Bg
     {
         height: 45em;
-        background-position: right 50% bottom 40%;
-
+    }
+    .note
+    {
+        background-position: right 50% bottom -25em;
     }
 }
 @media screen and (min-width:2560px)
@@ -247,7 +287,7 @@
     {
         font-size: 4em;
     }
-    .title i
+    .heart_icon
     {
         font-size: 3em;
     }
@@ -258,5 +298,21 @@
     .dish_List h2
     {
         font-size: 2em;
+    }
+    .img_Bg
+    {
+        height: 60em;
+    }
+    .francaise
+    {
+        background-position: right 100% bottom -3.5em;
+    }
+    .delice
+    {
+        background-position: right 45% bottom -6em;
+    }
+    .note
+    {
+        background-position: right 50% bottom -55em;
     }
 }
