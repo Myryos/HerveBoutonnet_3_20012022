@@ -14,8 +14,10 @@
   }
   header div {
     margin: auto;
-    -webkit-box-shadow: 0em 0.2em 0.2em #ddd;
-            box-shadow: 0em 0.2em 0.2em #ddd;
+    -webkit-box-shadow: 0em .2em 2em #ddd;
+            box-shadow: 0em .2em 2em #ddd;
+    padding: 1em;
+    margin-bottom: 0.01em;
   }
   header a {
     margin: auto;
